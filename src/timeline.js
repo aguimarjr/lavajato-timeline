@@ -124,7 +124,7 @@ const linha_do_tempo = async () => {
 
   // Salvar os resultados em um arquivo no formato JSON.
   let json = JSON.stringify(noticias, null, 2);
-  fs.writeFileSync('lavajato_linha_do_tempo.json', json);
+  fs.writeFileSync('../saida/lavajato_linha_do_tempo.json', json);
 
   console.log("\n### Fim do processamento da linha do tempo ###");
 };
