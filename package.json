@@ -1,0 +1,14 @@
+{
+  "name": "lavajato-timeline",
+  "version": "1.1.0",
+  "description": "Linha do tempo da Operação Lava Jato",
+  "main": "timeline.js",
+  "dependencies": {
+    "puppeteer": "^8.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "feaHD",
+  "license": "ISC"
+}
