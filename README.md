@@ -31,7 +31,8 @@
 
 ### 6. Exemplos JSON
 
-    ```json
+s
+```json
     [
  {
     "data": "10/09/2019",
@@ -57,10 +58,4 @@
     "crimes": "corrupção ativa, corrupção passiva, organização criminosa, lavagem de dinheiro, evasão de divisas"
   }
     ]
-    ```
-    
-
-    ```json
-
-    ```
-
+```
