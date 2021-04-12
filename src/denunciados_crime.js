@@ -1,7 +1,7 @@
 
 const fs = require("fs");
 
-let file1 = fs.readFileSync("/home/arj/google-drive/pessoal/mestrado/ribeirao/fea/lavajato/saida/lavajato_linha_do_tempo.json");
+let file1 = fs.readFileSync("../saida/lavajato_linha_do_tempo.json");
 let noticias = JSON.parse(file1);
 
 let denunciados = /[0–9]{2}/;
@@ -26,5 +26,6 @@ for (var i in noticias) {
     }
 }
 
+// Salvar novo json
 let json = JSON.stringify(noticias, null, 2);
 fs.writeFileSync("../saida/lavajato_linha_do_tempo_completo.json", json);
