@@ -29,12 +29,12 @@
 
 ### 5. Caso tenha interesse, para analisar o JSON e continuar o tratamento para extrair os denunciados e crimes das notícias, execute o script *denunciados_crime.js*.
 
-### 6. Exemplos JSON
+### 6. Exemplo JSON
 
-s
+
 ```json
-    [
- {
+[
+  {
     "data": "10/09/2019",
     "titulo": "65ª fase – Galeria",
     "texto": "A operação foi deflagrada no dia 10 de setembro para aprofundar investigações sobre esquemas de corrupção e de lavagem de dinheiro relacionados à Transpetro, subsidiária da Petrobras; e à Usina Hidrelétrica de Belo Monte. As apurações apontam que, ao menos entre 2008 e 2014, Edison Lobão e Márcio Lobão solicitaram e receberam propinas dos grupos Estre e Odebrecht da ordem de R$ 50 milhões. Evidências indicam que os atos de lavagem se estendem até 2019. Nos esquemas criminosos, as provas indicam que as propinas foram entregues em espécie em escritório de advocacia ligado à família Lobão, no Rio de Janeiro.\nLeia a matéria\n",
@@ -57,5 +57,6 @@ s
     "denunciados": "Sérgio Cabral, Arthur Soares, Carlos Nuzman, Leonardo Gryner, Papa Massata Diack, Lamine Diack",
     "crimes": "corrupção ativa, corrupção passiva, organização criminosa, lavagem de dinheiro, evasão de divisas"
   }
-    ]
+]
+
 ```
