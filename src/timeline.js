@@ -70,9 +70,9 @@ const linha_do_tempo = async () => {
         infos.titulo = titulo.textContent;
 
         // Texto
-        const textoNoticiaSelector = "div.timeline-text.d-block.position-relative.p-3 > p:nth-child(3)";
-        texto = noticia.querySelector(textoNoticiaSelector);
-        infos.texto = texto.textContent;
+        const textoNoticiaSelector = "div.timeline-text.d-block.position-relative.p-3 > p:nth-child(n+3)";
+        const partesTexto = noticia.querySelectorAll(textoNoticiaSelector);
+        infos.texto = Array.prototype.map.call(partesTexto, function(t) { return t.textContent; }).join('\n');
         
         // Link Para Matéria
         const linkMateriaSelector = "a.external-link";

@@ -2,13 +2,10 @@
 
 ## Softwares necessários
 * Node.js - https://nodejs.org/pt-br/
-* Puppeteer - https://pptr.dev/
-
 
 ## Rodando o script
 
 ### 1. Em um terminal, instalar as dependências do projeto.
-
 
     ```bash
     cd src
@@ -27,39 +24,43 @@
 ![Saída](img/saida.png)
 
 
-### 4. Será gerado um arquivo json na pasta saída.
+### 4. Será gerado o arquivo *lavajato_linha_do_tempo.json* na pasta saída.
 
-### 5. Exemplo JSON
 
-#### Exemplo 1:
+### 5. Caso tenha interesse, para analisar o JSON e continuar o tratamento para extrair os denunciados e crimes das notícias, execute o script *denunciados_crime.js*.
 
-    ![Exemplo 1](img/exemplo1.png)
-    ```bash
-    {
-    "data": "04/02/2020",
-    "titulo": "Processo penal nº 5004657-27.2020.4.02.5101",
-    "texto": "O Ministério Público Federal (MPF) denunciou o promotor Flávio Bonazza de Assis e outras quatro pessoas por crimes de corrupção e organização criminosa, ratificando a denúncia já apresentada pelo Ministério Público do Estado do Rio de Janeiro (MP/RJ). A denúncia tem como base o procedimento investigatório criminal (PIC) MP/RJ 2019.00555438, instaurado na Procuradoria-Geral de Justiça, para apurar a prática de crimes por parte do então promotor de Justiça, iniciado a partir de provas decorrentes da Operação Ponto Final."
-  }
-    ```
+### 6. Exemplos JSON
 
-#### Exemplo 2:
-
-    ![Exemplo 2](img/exemplo2.png)
     ```json
-    {
-        "data": "10/09/2020",
-        "titulo": "74ª fase",
-        "texto": "Foi deflagrada no dia 10 de setembro de 2020 a 74ª fase da operação Lava Jato, resultado de investigação conjunta do Ministério Público Federal (MPF) e da Polícia Federal (PF), com o cumprimento de 25 mandados de busca e apreensão nos estados do Rio de Janeiro e de São Paulo e três intimações judiciais no estado do Rio de Janeiro, bem como de ordem de bloqueio de ativos financeiros mantidos por 22 pessoas naturais e jurídicas envolvidas na trama criminosa, em contas no Brasil e no exterior, até o limite de R$ 97,965 milhões.As medidas objetivam aprofundar as apurações relacionadas ao envolvimento de funcionários da Diretoria Financeira da Petrobras em rede criminosa capitaneada por altos executivos do Banco Paulista, voltada à prática de crimes contra a Administração Pública, contra o Sistema Financeiro Nacional e de lavagem de capitais, mediante a utilização, em larga escala, de mecanismos de ocultação e dissimulação da origem ilícita de ativos financeiros. ",
-        "linkMateria": "http://http//www.mpf.mp.br/pr/sala-de-imprensa/noticias-pr/74a-fase-da-lava-jato-investiga-esquema-em-operacoes-de-cambio-com-taxas-superfaturadas-na-petrobras",
-        "numeros": [
-        {
-            "descricao": "BUSCAS E APREENSÕES",
-            "valor": "25"
-        },
-        {
-            "descricao": "INTIMAÇÕES JUDICIAIS",
-            "valor": "3"
-        }
-        ]
-    }    
+    [
+ {
+    "data": "10/09/2019",
+    "titulo": "65ª fase – Galeria",
+    "texto": "A operação foi deflagrada no dia 10 de setembro para aprofundar investigações sobre esquemas de corrupção e de lavagem de dinheiro relacionados à Transpetro, subsidiária da Petrobras; e à Usina Hidrelétrica de Belo Monte. As apurações apontam que, ao menos entre 2008 e 2014, Edison Lobão e Márcio Lobão solicitaram e receberam propinas dos grupos Estre e Odebrecht da ordem de R$ 50 milhões. Evidências indicam que os atos de lavagem se estendem até 2019. Nos esquemas criminosos, as provas indicam que as propinas foram entregues em espécie em escritório de advocacia ligado à família Lobão, no Rio de Janeiro.\nLeia a matéria\n",
+    "linkMateria": "http://http//www.mpf.mp.br/pr/sala-de-imprensa/noticias-pr/marcio-lobao-e-preso-na-65a-fase-da-lava-jato",
+    "numeros": [
+      {
+        "descricao": "Prisão",
+        "valor": "1"
+      },
+      {
+        "descricao": "Buscas e apreensões",
+        "valor": "11"
+      }
+    ]
+  },
+  {
+    "data": "25/10/2017",
+    "titulo": "Processo penal nº 0507813-56 .2017.4.02.5101 (Operação Unfair Play)",
+    "texto": "De acordo com a denúncia, Sérgio Cabral, Carlos Nuzman e Leonardo Gryner solicitaram diretamente a Arthur Soares e aceitaram promessa de vantagem indevida a outras pessoas, os senegaleses Papa Diack e Lamine Diack, consistente no pagamento de US$ 2 milhões para garantir votos para o Rio de Janeiro na eleição da cidade-sede dos Jogos Olímpicos de 2016, o que configura corrupção passiva. A denúncia equipara Nuzman e Gryner a funcionários públicos, uma vez que tanto o COB quanto o Comitê Organizador dos Jogos receberam e eram gestores de verbas públicas e exerciam, por delegação, uma atividade típica de Estado: o desporto.6 denunciados: Sérgio Cabral, Arthur Soares, Carlos Nuzman, Leonardo Gryner, Papa Massata Diack, Lamine DiackCrimes: corrupção ativa, corrupção passiva, organização criminosa, lavagem de dinheiro, evasão de divisas\n",
+    "denunciados": "Sérgio Cabral, Arthur Soares, Carlos Nuzman, Leonardo Gryner, Papa Massata Diack, Lamine Diack",
+    "crimes": "corrupção ativa, corrupção passiva, organização criminosa, lavagem de dinheiro, evasão de divisas"
+  }
+    ]
     ```
+    
+
+    ```json
+
+    ```
+
