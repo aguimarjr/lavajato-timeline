@@ -27,7 +27,7 @@
 ### 4. Será gerado o arquivo *lavajato_linha_do_tempo.json* na pasta saída.
 
 
-### 5. Caso tenha interesse, para analisar o JSON e continuar o tratamento para extrair os denunciados e crimes das notícias, execute o script *denunciados_crime.js*.
+### 5. Caso tenha interesse, para analisar o JSON e continuar o tratamento para extrair denunciados e crimes das notícias, execute o script *denunciados_crime.js*.
 
 ### 6. Exemplo JSON
 
