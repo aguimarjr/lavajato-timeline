@@ -8,7 +8,7 @@
 // Filesystem
 const fs = require("fs");
 
-// Puppeteer com suporte para plugins
+// Puppeteer
 const puppeteer = require("puppeteer");
 
 const linha_do_tempo = async () => {
